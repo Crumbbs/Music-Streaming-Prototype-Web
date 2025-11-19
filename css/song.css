@@ -1,0 +1,60 @@
+@import url("_root.css");
+@import url("_nav&footer.css");
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.new-release,
+.song-list,
+.popular {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.song-cover-list,
+.popular-cover-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 0.5rem;
+}
+
+.song-list {
+  width: 100%;
+}
+
+.song-card,
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.song-card {
+  width: 100%;
+}
+
+.song-card > img {
+  cursor: pointer;
+}
+
+.song-name p {
+  opacity: 0.6;
+}
+
+.popular-cover-list {
+  grid-template-columns: repeat(4, 1fr);
+}

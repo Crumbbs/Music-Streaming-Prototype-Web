@@ -1,0 +1,73 @@
+@import url("_root.css");
+@import url("_nav&footer.css");
+
+.song-detail {
+  max-width: clamp(35rem, 65svw, 65svw);
+  display: grid;
+  gap: 2rem;
+}
+
+.song-cover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-detail-title {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.song-title h1 {
+  font-size: 3rem;
+}
+
+.song-detail p {
+  opacity: 0.8;
+}
+
+.song-detail button {
+  color: inherit;
+  background: var(--primary-blue);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+.song-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-content p:first-of-type {
+  opacity: 0.5;
+}
+
+.lyrics {
+  display: grid;
+  gap: 1rem;
+}

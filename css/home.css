@@ -1,0 +1,33 @@
+@import url("_root.css");
+@import url("_nav&footer.css");
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.song-list {
+  max-width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 1rem;
+}
+
+.best-seller,
+.recommended {
+  display: grid;
+  gap: 1rem;
+}
+
+.caption p:last-of-type {
+  opacity: 0.5;
+}

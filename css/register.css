@@ -1,0 +1,55 @@
+@import url("_root.css");
+@import url("_nav&footer.css");
+
+.register {
+  max-width: clamp(25rem, 50svw, 40rem);
+}
+
+form,
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input {
+  gap: 0;
+}
+
+.input input {
+  width: 100%;
+  color: var(--primary-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: var(--tertiary-darkblue);
+  padding: 1rem;
+}
+
+.ader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#submit-btn {
+  width: 100%;
+  color: var(--primary-white);
+  background: var(--primary-blue);
+
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+select {
+  height: 3.4rem;
+  width: 100%;
+  color: var(--primary-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: var(--tertiary-darkblue);
+  padding: 1rem;
+}
